@@ -1,0 +1,31 @@
+<div fxLayout="column" fxLayoutAlign="space-between center" class="cat-content">
+  <mat-card>
+    <form [formGroup]="addBookmrkForm" (submit)="addBookmrk()">
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Title</mat-label>
+          <input matInput placeholder="Title" formControlName="title">
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Url</mat-label>
+          <input matInput placeholder="Url" formControlName="url">
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field appearance="outline">
+          <mat-label>Category</mat-label>
+          <input matInput placeholder="Category" formControlName="category">
+        </mat-form-field>
+        <!--<button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>Item 1</button>
+          <button mat-menu-item>Item 2</button>
+        </mat-menu>-->
+      </p>
+      <button mat-raised-button>Save</button>
+    </form>
+  </mat-card>
+</div>
